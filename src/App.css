@@ -66,6 +66,21 @@
   }
 }
 
+@media (max-width: 640px) {
+  .app-header {
+    padding: 1.25rem 1rem 0.75rem;
+  }
+
+  .app-main {
+    padding: 0.75rem 1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .app-footer {
+    padding: 0.75rem 1rem 1.5rem;
+  }
+}
+
 /* ---------- Panneau de contrôle ---------- */
 
 .controls {
@@ -110,6 +125,7 @@
   flex-direction: column;
   gap: 0.4rem;
   flex: 1;
+  min-width: 0;
 }
 
 .field > span {
@@ -133,6 +149,8 @@
   color: var(--linen);
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.05rem;
+  width: 100%;
+  min-width: 0;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -150,6 +168,23 @@
 .field textarea {
   resize: vertical;
   line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .controls {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .field-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .field input,
+  .field textarea {
+    font-size: 16px; /* évite le zoom automatique au focus sur iOS Safari */
+  }
 }
 
 .swatches {
@@ -377,10 +412,37 @@
   border: 2px solid color-mix(in srgb, var(--seal) 70%, black 20%);
 }
 
+@media (max-width: 640px) {
+  .stage {
+    min-height: auto;
+    padding: 1.5rem 0.5rem 2.5rem;
+  }
+
+  .seal {
+    width: 56px;
+    height: 56px;
+    font-size: 0.85rem;
+    bottom: -18px;
+    right: -10px;
+  }
+}
+
 @media (max-width: 480px) {
   .card,
   .card-stack {
     width: 92vw;
     min-height: 480px;
+  }
+
+  .card-frame {
+    padding: 1.9rem 1.25rem 2.25rem;
+  }
+
+  .ornament {
+    width: 100px;
+  }
+
+  .message {
+    max-width: 24ch;
   }
 }
