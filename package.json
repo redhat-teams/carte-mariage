@@ -10,14 +10,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview",
-    "start": "serve -s dist -l 8080"
-
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "serve": "^14.2.6"
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
