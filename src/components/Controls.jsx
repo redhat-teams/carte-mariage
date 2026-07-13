@@ -6,7 +6,7 @@ export default function Controls({ data, onChange, paletteKey, onPaletteChange }
   return (
     <div className="controls">
       <div className="controls-head">
-        <p className="controls-eyebrow">Atelier du faire-part</p>
+        <p className="controls-eyebrow">BUSINESS  IT SOLUTIONS </p>
         <h2>Composez votre carton</h2>
         <p className="controls-hint">Chaque champ met à jour l'aperçu à droite, en temps réel.</p>
       </div>
